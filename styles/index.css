@@ -1,0 +1,115 @@
+  
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lato:ital,wght@0,400;0,900;1,700&family=Open+Sans:wght@400;700;800&family=Work+Sans:wght@400;500;600;700;800&display=swap');
+
+*{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    }
+
+
+
+
+  *{
+    margin: auto;
+    padding: 0;
+}
+
+/* nav related style starts here */
+
+.nav-container{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 100px;
+    margin-left: 100px;
+   
+    align-items: center;
+    min-height: 50px;
+    margin: 0 auto;
+    margin-top: 20px;
+
+}
+.logo-container{
+    display: flex;
+    justify-content: space-between;
+    /* width: 50%; */
+    gap: 15px;
+}
+.logo-container img{
+    width: 50px;
+}
+.logo-container h3{
+    color: #0B0223;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 700;
+}
+.nav-items{
+    /* width: 50%; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+.nav-items a{
+    gap: 40px;
+    text-decoration: none;
+    font-size: 18px;
+    color: black;
+    padding-left: 30px;
+    font-weight: 500;
+    
+}
+ .nav-items .follow-btn{
+    border-radius: 8px;
+    background: rgba(11, 2, 35, 0.10);
+    padding: 10px 20px;
+    font-weight: 700;
+    padding-right: 30px;
+    margin-left: 30px;
+
+    color: black;
+    text-align: center;
+    margin-right: 20px;
+
+
+}
+.G-section{
+    color: #FF42A5;
+}
+
+
+
+
+
+
+@media screen and (max-width:400px){
+    .nav-container,
+    .nav-items-container,
+    .nav-items{
+
+      
+        flex-direction: column;
+        
+        
+    }
+    .nav-container{
+        margin-top: 30px;
+    }
+
+    .nav-items-container{
+        width: 100%;
+        
+    }
+    
+
+    .nav-items a{
+        margin-top: 20px;
+        padding-top: 20px;
+
+    }
+
+    .nav-items-container .follow-btn{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+}
