@@ -113,6 +113,7 @@ background-clip: text;
 }
 .icon-text{
     font-size: 10px;
+    text-decoration: none;
 }
 .icon-items{
     padding: 5px;
@@ -310,7 +311,7 @@ text-align: center;
     .footer-logo{
         display: flex;
         /* justify-content: space-between; */
-        width: 30%;
+        width: 15%;
         /* gap: 15px; */
     }
     .footer-desc{
@@ -325,11 +326,26 @@ text-align: center;
         grid-template-columns: repeat(3 1fr); */
         
     }
+    .list-group{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        text-decoration: none;
+        list-style: none;
+        margin-bottom: 20px;
+        width: 25%;
+    }
     
-    .icons-container i{
-        padding: 20px;
-        width: 40px;
-        height: 40px; 
+    .footer .list-group-item {
+        background: none;
+        border: none;
+        color: #fff;
+       
+    }
+    .footer.list-group-item a{
+        background: none;
+        border: none;
+        color: #fff;
+        
     }
     .last{
         font-size: 12px;
@@ -423,6 +439,17 @@ text-align: center;
         padding: 0;
         margin-left: -40px;
     } 
+    .games-items{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap:0px;
+
+
+    }
+    .game-item{
+        gap:0px;
+
+    }
     .footer-desc{
         display: grid;
         grid-template-columns: repeat(3,1fr);
@@ -433,4 +460,20 @@ text-align: center;
 
     }
 
+}
+@media screen  and (min-width:576px) and (max-width: 960px){
+    
+    .banner-container{
+    flex-direction: column;
+        
+}
+.banner-img{
+    width:100%;
+}
+.banner-text{
+    width: 100%;
+}
+.box-container{
+    display: grid; 
+    grid-template-columns: repeat(2,1fr);}
 }
