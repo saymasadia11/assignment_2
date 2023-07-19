@@ -99,9 +99,10 @@
     
 }
 .banner-text h1{ 
-    background-image: linear-gradient(to bottom,#e893cf,#9376e0);
-    color: transparent;
-    background-clip: text;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
     font-size: 50px;
     font-weight: 700;
     margin-top: 10px;
@@ -146,9 +147,10 @@ padding-bottom: 10px;
     font-size: 18px;
  }
  .box-title{
-    background-image: linear-gradient(to bottom,#e893cf,#9376e0);
-    color: transparent;
+    background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
     background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
     font-size: 30px;
     font-weight: 700;
    
@@ -156,8 +158,8 @@ padding-bottom: 10px;
  .box-container{
     display: grid; 
     grid-template-columns: repeat(4,1fr);
-    margin-left: 120px;
-    margin-right: 4%;
+    margin-right: 5%;
+    margin-left: 5%;
     
  }
  .box-item p {
@@ -168,7 +170,7 @@ padding-bottom: 10px;
  }
  .box-item img{
    
-    height: 300px;
+    height: 320px;
     width: 250px;
     padding-top: 20px;
     padding-bottom: 30px;
@@ -176,6 +178,47 @@ padding-bottom: 10px;
 
  }
 
+ /* games related section added here */
+
+ .games{
+    display: flex;
+    align-items: center;
+    gap: 100px;
+    margin-top: 130px;
+    margin-right: 8%;
+    margin-left: 8%;
+ }
+.games-container h3{
+    font-size: 30px;
+font-weight: 700;
+padding: 15px;
+text-align: center;
+}
+
+ 
+.games-desc{
+    color: var(--dark-03, #727272);
+font-size: 16px;
+font-style: normal;
+font-weight: 400;
+text-align: center;
+}
+.overlap-img img{
+    
+    height:auto;
+    width: 150px;
+    padding: 10px;
+    position: relative;
+    bottom: 150px;
+        margin-left: -80px;
+        
+    }
+    
+    .games-img{
+        height: 450px;
+        width: 350px;
+    }
+    
    
 
 
@@ -186,7 +229,8 @@ padding-bottom: 10px;
 @media screen and (max-width:576px){
     .nav-container,
     .nav-items-container,
-    .nav-items{
+    .nav-items,
+    .games{
 
       
         flex-direction: column;
@@ -248,4 +292,12 @@ padding-bottom: 10px;
     .box-container{
             margin-left: 0px;
         }
+    .games{
+        margin-right: 0;
+    margin-left: 0;
+    } 
+    .overlap-img img {
+        padding: 0;
+        margin-left: -40px;
+    } 
 }
