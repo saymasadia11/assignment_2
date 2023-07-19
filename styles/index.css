@@ -115,8 +115,7 @@ background-clip: text;
     font-size: 10px;
 }
 .icon-items{
-    padding: 10px;
-    /* padding-top: 20px; */
+    padding: 5px;
 }
 
 .banner-button {
@@ -171,8 +170,8 @@ padding-bottom: 10px;
  }
  .image-container img{
    
-    height: 240px;
-    width: 180px;
+    height: 300px;
+    width: 250px;
     padding-top: 20px;
     padding-bottom: 30px;
     /* gap: 15px; */
@@ -299,8 +298,50 @@ text-align: center;
         padding-left: 12px;
         padding-right: 12px;
      }
+    /* footer related style */
     
-   
+    .footer-container{
+        background-color: darkgrey;
+        color: rgb(15, 17, 19);
+        text-align: center;
+        height: 80vh;
+        padding-top: 100px;
+    }
+    .footer-logo{
+        display: flex;
+        /* justify-content: space-between; */
+        width: 30%;
+        /* gap: 15px; */
+    }
+    .footer-desc{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    
+    .footer-desc span{
+        padding: 10px;
+        padding-bottom: 20px;
+        /* display: grid;
+        grid-template-columns: repeat(3 1fr); */
+        
+    }
+    
+    .icons-container i{
+        padding: 20px;
+        width: 40px;
+        height: 40px; 
+    }
+    .last{
+        font-size: 12px;
+        padding-top: 30px;
+        
+        
+    }
+    .footer-con span{
+        font-size: 14px;
+        padding: 10px;
+
+    }
 
 
 
@@ -323,6 +364,7 @@ text-align: center;
     .banner-container{
         flex-direction: column-reverse;
     }
+   
 
     .box-container{  
         grid-template-columns: 1fr;
@@ -381,4 +423,14 @@ text-align: center;
         padding: 0;
         margin-left: -40px;
     } 
+    .footer-desc{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .footer-con{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+
+    }
+
 }
