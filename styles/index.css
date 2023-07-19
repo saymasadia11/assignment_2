@@ -77,6 +77,56 @@
     color: #FF42A5;
 }
 
+/* banner related section starts here */
+.banner-container{
+    display: flex;
+    background-image: url("../images/Group\ 14.png");
+   
+    padding: 10px;
+    /* border-radius: 10px; */
+    /* margin: 50px; */
+    align-items: center;
+    margin-top: 30px;
+}
+.banner-text{
+    width: 50%;
+    text-align: center;}
+    
+
+.banner-img{
+        width: 50%;
+       
+    
+}
+.banner-text h1{ 
+    background-image: linear-gradient(to bottom,#e893cf,#9376e0);
+    color: transparent;
+    background-clip: text;
+    font-size: 50px;
+    font-weight: 700;
+    margin-top: 10px;
+}
+.banner-desc{
+    font-size: 18px;
+    font-weight: 600;
+}
+.icon-text{
+    font-size: 10px;
+}
+.icon-items{
+    padding: 10px;
+    /* padding-top: 20px; */
+}
+
+.banner-button {
+     background-color:#FF42A5 ;
+    padding: 10px 20px;
+    margin-right: 20px;
+    border-radius: 5px;
+    margin-top: 20px;
+    color: white;
+ }   
+
 
 
 
@@ -91,6 +141,11 @@
         flex-direction: column;
         
         
+    }
+
+
+    .banner-container{
+        flex-direction: column-reverse;
     }
     .nav-container{
         margin-top: 30px;
@@ -112,4 +167,25 @@
         width: 100%;
         margin-bottom: 10px;
     }
+
+    .banner-text,.banner-img{
+        width: 100%;
+        margin-bottom: 20px;
+        
+    }
+    .banner-img img{
+        width: 300px;
+        height: auto;
+        align-content: center;
+    }
+    .banner-text h1{ 
+        background-image: linear-gradient(to bottom,#e893cf,#9376e0);
+        color: transparent;
+        background-clip: text;
+        font-size: 50px;
+        font-weight: 700;
+        margin-top: 10px;
+    }
+    .banner-text p{
+        font-size: 25px;}
 }
