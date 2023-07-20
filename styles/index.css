@@ -123,10 +123,15 @@ background-clip: text;
      background-color:#FF42A5 ;
     padding: 10px 20px;
     margin-right: 20px;
-    border-radius: 5px;
+    border-radius: 8px;
     margin-top: 20px;
     color: white;
+    cursor: pointer;
  }  
+.banner-button:hover{
+    color: #727272;
+}
+
  
  /* box related style starts here */
  .box-header{
@@ -223,6 +228,7 @@ background-clip: text;
     background-color: #333;
     padding: 10px 20px;
     text-decoration: none;
+    cursor: pointer;
   }
   
   .button:hover {
